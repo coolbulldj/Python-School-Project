@@ -2,7 +2,7 @@ import pygame
 from display import display as displayObj
 from UIClasses.UIBase import UIBase as UIBaseObj
 Display = displayObj()
-TestFrame = UIBaseObj((0,0), (0.5, 0.5), "src\Assets\UIAssets\WhiteSquare.png")
+TestFrame = UIBaseObj((0,0), (0.5, 0.5), r"src\Assets\UIAssets\WhiteSquare.png", (0,0))
 Display.add_element(TestFrame)
 
 

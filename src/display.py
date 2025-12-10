@@ -15,4 +15,4 @@ class display():
             self._dipslay.blit(Img, Pos)
 
     def add_element(self, elem):
-        self.elements.append(elem)
+        self.elements.add
