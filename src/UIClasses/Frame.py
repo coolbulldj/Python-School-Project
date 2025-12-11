@@ -1,6 +1,6 @@
 from UIBase import UIBase
 
 
-class Frame():
+class Frame(UIBase):
     def __init__(self):
-        self = UIBase
+        pass

@@ -2,8 +2,8 @@ import pygame
 
 class display():
     def __init__(self):
-        self._dipslay = pygame.display.set_mode((500,500))
-        self.elements = {}
+        self._dipslay = pygame.display.set_mode((500,500), pygame.RESIZABLE)
+        self.elements = []
 
     def refresh(self):
         self._dipslay.fill((0,0,0))
@@ -14,5 +14,8 @@ class display():
             Img, Pos = elem.refresh(DisplaySizeX, DisplaySizeY)
             self._dipslay.blit(Img, Pos)
 
+    def get_size(self):
+        return self._dipslay.get_size()
+
     def add_element(self, elem):
-        self.elements.add
+        self.elements.append(elem)
