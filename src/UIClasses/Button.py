@@ -1,8 +1,8 @@
-from UIBase import UIBase
+from .UIBase import UIBase
 
 
 class Button(UIBase):
-    def __init__(self, Pos, Size, ImagePath, AnchorPoint, zIndex):
+    def __init__(self, Pos, Size, ImagePath, AnchorPoint=(0.5, 0.5), zIndex=1):
         super().__init__(Pos, Size, ImagePath, AnchorPoint, zIndex)
         self.events = {
             "MouseEnter": [],
